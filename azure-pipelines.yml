@@ -14,7 +14,7 @@ steps:
 # JDKのセットアップ
 - task: JavaToolInstaller@0
   inputs:
-    versionSpec: '8'
+    versionSpec: '11'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'PreInstalled'
 
@@ -25,5 +25,5 @@ steps:
     tasks: 'assembleDebug'
     publishJUnitResults: false
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'  # Replace with your JDK version
+    jdkVersionOption: '1.11'  # Replace with your JDK version
     jdkArchitectureOption: 'x64'
