@@ -22,7 +22,7 @@ steps:
   inputs:
     workingDirectory: ''
     gradleWrapperFile: 'gradlew'
-    tasks: 'assembleDebug'  # Replace with the tasks you want to run
+    tasks: 'assembleDebug'
     publishJUnitResults: false
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'  # Replace with your JDK version
