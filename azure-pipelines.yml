@@ -19,8 +19,11 @@ steps:
 
 - task: Gradle@3
   inputs:
-    gradleWrapperFile: 'gradlew'  # Path to your Gradle wrapper
-    tasks: 'assembleDebug'  # Replace with the tasks you want to run
-
-
+    workingDirectory: ''
+    gradleWrapperFile: 'gradlew'
+    tasks: 'assembleDebug'
+    publishJUnitResults: false
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.11'  # Replace with your JDK version
+    jdkArchitectureOption: 'x64'
 
